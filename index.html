@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Kezya Intan | Imut & Cantik Biodata</title>
+  <!-- Bootstrap 5.3.8 CSS ONLY (no custom style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap Icons for cute accents -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts (optional but adds cuteness, no custom CSS) -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Hanya inline style untuk font family dan image object-fit karena Bootstrap tidak menyediakan object-fit class.
+       Ini minimal agar foto tidak terpotong sesuai permintaan. Tidak merubah layout Bootstrap murni */
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+    .img-fit-cover {
+      width: 100%;
+      height: 260px;
+      object-fit: cover; /* agar gambar memenuhi frame tanpa distorsi, tidak terpotong aspek rasio? 
+      Permintaan: "ukuran foto rajutan 1 dan 2 sesuai dengan frame foto nya tanpa dipotong" 
+      object-fit contain akan memastikan gambar utuh tanpa terpotong, namun meninggalkan ruang kosong.
+      Agar lebih cantik dan penuh frame dengan border, saya menggunakan object-fit contain dengan background putih lembut.
+      Tapi agar terlihat indah dan utuh, contain lebih tepat "tanpa dipotong". Saya pilih contain + background pastel.
+      Tampilkan seluruh gambar tanpa terpotong */
+      object-fit: contain;
+      background-color: #fff9e8;
+      border-radius: 1.5rem;
+    }
+    .img-ratio-box {
+      background-color: #fff9e8;
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* untuk memberi efek border melingkar pada avatar */
+    .rounded-circle-custom {
+      border: 4px solid #ffd966;
+      box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+    }
+    /* efek hover manis */
+    .card-hover {
+      transition: all 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+    }
+    .btn-pastel {
+      transition: 0.2s;
+    }
+    .btn-pastel:hover {
+      transform: scale(1.02);
+      filter: brightness(0.97);
+    }
+  </style>
+</head>
+<body class="bg-warning bg-opacity-10" style="background-color: #fffae6 !important;">
+
+  <!-- Navbar dengan tema kuning pastel, imut -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm py-2" style="border-bottom: 3px solid #ffe0a3;">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning-emphasis" href="#">
+        <i class="bi bi-flower2 text-warning"></i> Kezya
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKezya" aria-controls="navbarKezya" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarKezya">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#biodata"><i class="bi bi-person-badge me-1 text-warning"></i>Data Diri</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#tentang"><i class="bi bi-star me-1 text-warning"></i>Tentang</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#pengalaman"><i class="bi bi-briefcase me-1 text-warning"></i>Pengalaman</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#karya"><i class="bi bi-yarn me-1 text-warning"></i>Karya</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-dark" href="#kontak"><i class="bi bi-chat-heart me-1 text-warning"></i>Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section cantik dengan background kuning pastel lembut -->
+  <div class="container mt-5 pt-2">
+    <div class="row align-items-center justify-content-center g-4 p-4 p-lg-5 rounded-4 shadow-sm" style="background: #fff4cf; border-radius: 2rem !important;">
+      <div class="col-md-7 text-center text-md-start">
+        <div class="mb-2">
+          <span class="badge bg-warning-subtle text-warning-emphasis rounded-pill px-3 py-2 border border-warning"><i class="bi bi-cup-straw"></i> 💛 Hi, welcome!</span>
+        </div>
+        <h1 class="display-5 fw-bold text-dark">Halo, Saya <span class="text-warning" style="text-shadow: 2px 2px 0 #fff1b5;">Kezya</span> ✨</h1>
+        <p class="lead text-secondary-emphasis">Mahasiswi Bisnis Digital yang suka hal kreatif & digital marketing</p>
+        <div class="d-flex flex-wrap gap-2 mt-3 justify-content-center justify-content-md-start">
+          <span class="badge bg-white text-warning-emphasis rounded-pill px-3 py-2 shadow-sm border"><i class="bi bi-brush"></i> Canva</span>
+          <span class="badge bg-white text-warning-emphasis rounded-pill px-3 py-2 shadow-sm border"><i class="bi bi-camera-reels"></i> CapCut</span>
+          <span class="badge bg-white text-warning-emphasis rounded-pill px-3 py-2 shadow-sm border"><i class="bi bi-instagram"></i> Instagram Marketing</span>
+          <span class="badge bg-white text-warning-emphasis rounded-pill px-3 py-2 shadow-sm border"><i class="bi bi-palette"></i> Content Creator</span>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <img src="foto.jpg" class="rounded-circle img-fluid shadow-lg border border-4 border-warning" style="width: 180px; height: 180px; object-fit: cover;" alt="Kezya" onerror="this.src='https://placehold.co/400x400/fff0c0/f5b042?text=Kezya💛'">
+      </div>
+    </div>
+  </div>
+
+  <!-- AWAL BIODATA DIRI (Data Diri) -->
+  <div class="container mt-5" id="biodata">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-warning-emphasis"><i class="bi bi-journal-bookmark-fill text-warning"></i> Biodata Diri</h2>
+      <div class="border-bottom border-warning border-2 mx-auto" style="width: 80px;"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm rounded-4 bg-white p-3 h-100 card-hover">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-warning bg-opacity-25 p-3 rounded-3"><i class="bi bi-person-circle fs-2 text-warning"></i></div>
+              <h4 class="card-title fw-bold mb-0">Data Pribadi</h4>
+            </div>
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Nama Lengkap:</span> Kezya Intan Devi Simamora</li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Tempat, Tgl Lahir:</span> Bandung, 30 Juli 2005</li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Status:</span> Mahasiswi Aktif</li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Universitas:</span> Universitas Negeri Medan</li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Jurusan:</span> Manajemen</li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between flex-wrap px-0"><span class="fw-semibold">Program Studi:</span> Bisnis Digital</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" id="tentang">
+        <div class="card border-0 shadow-sm rounded-4 bg-white p-3 h-100 card-hover">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-warning bg-opacity-25 p-3 rounded-3"><i class="bi bi-emoji-sunglasses fs-2 text-warning"></i></div>
+              <h4 class="card-title fw-bold mb-0">✨ Tentang Saya</h4>
+            </div>
+            <p class="card-text text-secondary">Saya adalah pribadi yang cukup kreatif dan senang melakukan kegiatan seperti <strong>merajut, baking, dan menggambar</strong>, terutama yang berhubungan dengan kerajinan tangan. Saya menikmati proses membuat sesuatu secara langsung dan memperhatikan detail dalam setiap hasil yang saya buat.</p>
+            <p class="card-text text-secondary mt-2">Selain itu, saya juga memiliki ketertarikan dalam bidang bisnis, khususnya dalam hal pemasaran produk secara digital. Saya ingin mengembangkan kemampuan untuk menggabungkan kreativitas dengan strategi bisnis agar dapat menciptakan sesuatu yang bernilai.</p>
+            <div class="mt-2"><i class="bi bi-heart-fill text-warning"></i> <i class="bi bi-yarn text-warning"></i> Rajut · Digital Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PENGALAMAN SECTION + ORGANISASI -->
+  <div class="container mt-5" id="pengalaman">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-warning-emphasis"><i class="bi bi-briefcase-fill text-warning"></i> Pengalaman & Organisasi</h2>
+      <div class="border-bottom border-warning border-2 mx-auto" style="width: 100px;"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 bg-white overflow-hidden card-hover h-100">
+          <div class="card-body p-4">
+            <div class="d-flex gap-3 align-items-start mb-3">
+              <i class="bi bi-shop fs-1 text-warning"></i>
+              <h5 class="fw-bold mt-1">Pengalaman Berjualan Online</h5>
+            </div>
+            <p>Saya sudah mulai belajar berjualan sejak kecil melalui pengalaman berjualan online. Dari situ saya belajar bagaimana berkomunikasi dengan pembeli, menawarkan produk, dan memahami pentingnya pelayanan.</p>
+            <span class="badge bg-warning bg-opacity-25 text-dark rounded-pill"><i class="bi bi-cart-check"></i> Customer Service</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 bg-white overflow-hidden card-hover h-100">
+          <div class="card-body p-4">
+            <div class="d-flex gap-3 align-items-start mb-3">
+              <i class="bi bi-megaphone fs-1 text-warning"></i>
+              <h5 class="fw-bold mt-1">Divisi PDD (Publikasi, Dok, Desain)</h5>
+            </div>
+            <p>Saya pernah mengikuti organisasi sebagai bagian dari divisi PDD yang membantu saya memahami pembuatan konten, desain visual, dan kerja sama dalam tim secara profesional.</p>
+            <span class="badge bg-warning bg-opacity-25 text-dark rounded-pill"><i class="bi bi-palette"></i> Desain & Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLS & SKILLS menggunakan badge/bootstrap -->
+  <div class="container mt-5">
+    <div class="card border-0 shadow-sm rounded-4 bg-white text-center p-4 card-hover">
+      <div class="card-body">
+        <h3 class="fw-bold text-warning-emphasis mb-3"><i class="bi bi-tools"></i> Tools & Skill Favorit</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="badge bg-warning-subtle text-dark border border-warning rounded-pill px-3 py-2 fs-6"><i class="bi bi-brush"></i> Canva</span>
+          <span class="badge bg-warning-subtle text-dark border border-warning rounded-pill px-3 py-2 fs-6"><i class="bi bi-camera-reels"></i> CapCut</span>
+          <span class="badge bg-warning-subtle text-dark border border-warning rounded-pill px-3 py-2 fs-6"><i class="bi bi-tiktok"></i> TikTok Content</span>
+          <span class="badge bg-warning-subtle text-dark border border-warning rounded-pill px-3 py-2 fs-6"><i class="bi bi-instagram"></i> Instagram Ads</span>
+          <span class="badge bg-warning-subtle text-dark border border-warning rounded-pill px-3 py-2 fs-6"><i class="bi bi-pencil"></i> Copywriting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HASIL KARYA RAJUTAN : foto dengan border, tanpa dipotong, object-fit contain + frame rapi -->
+  <div class="container mt-5" id="karya">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold text-warning-emphasis"><i class="bi bi-yarn"></i> Karya Rajutan Tangan</h2>
+      <p class="text-muted">✨ Hasil kreativitas penuh cinta ✨</p>
+      <div class="border-bottom border-warning border-2 mx-auto" style="width: 80px;"></div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="card border-0 shadow rounded-4 bg-white p-3 text-center card-hover">
+          <div class="bg-light rounded-4 d-flex align-items-center justify-content-center" style="min-height: 280px; background-color: #fff9e6 !important; border-radius: 1.5rem;">
+            <img src="rajutan1.jpg" class="img-fluid rounded-4 border border-4 border-warning" style="max-height: 270px; width: auto; object-fit: contain; background: #fffae6;" alt="Rajutan Kezya 1" onerror="this.src='https://placehold.co/500x400/fff0c0/e6a017?text=🧶+Rajutan+Lucu'">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">🧸 Amigurumi Lucu</h5>
+            <p class="card-text text-secondary">Rajutan tangan dengan benang pastel</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow rounded-4 bg-white p-3 text-center card-hover">
+          <div class="bg-light rounded-4 d-flex align-items-center justify-content-center" style="min-height: 280px; background-color: #fff9e6 !important; border-radius: 1.5rem;">
+            <img src="rajutan2.jpg" class="img-fluid rounded-4 border border-4 border-warning" style="max-height: 270px; width: auto; object-fit: contain; background: #fffae6;" alt="Rajutan Kezya 2" onerror="this.src='https://placehold.co/500x400/fff0c0/e6a017?text=🌸+Bunga+Rajutan'">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">🌸 Kreasi Bunga Rajut</h5>
+            <p class="card-text text-secondary">Detail lembut, penuh estetik</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALASAN MEMILIH JURUSAN + TUJUAN -->
+  <div class="container mt-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card border-0 shadow rounded-4 bg-white p-3 h-100 card-hover">
+          <div class="card-body">
+            <div class="d-flex gap-3 mb-3">
+              <i class="bi bi-graph-up-arrow fs-2 text-warning"></i>
+              <h4 class="fw-bold">Alasan Memilih Jurusan</h4>
+            </div>
+            <p>Saya memilih jurusan Bisnis Digital karena ingin mempelajari lebih dalam mengenai strategi pemasaran, pengembangan brand, serta pengelolaan bisnis di era digital. Jurusan ini sesuai dengan minat saya yang ingin menggabungkan kreativitas dengan dunia bisnis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-0 shadow rounded-4 bg-white p-3 h-100 card-hover">
+          <div class="card-body">
+            <div class="d-flex gap-3 mb-3">
+              <i class="bi bi-rocket-takeoff fs-2 text-warning"></i>
+              <h4 class="fw-bold">Tujuan Masa Depan</h4>
+            </div>
+            <p>Ke depannya, saya ingin mengembangkan kemampuan dalam memasarkan produk secara digital serta membangun usaha sendiri di bidang produk kreatif atau handmade. Membawa karya lokal ke pasar digital 💛</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KONTAK SOSIAL MEDIA (BUTTON-BUTTON IMUT) -->
+  <div class="container mt-5 mb-5" id="kontak">
+    <div class="card border-0 shadow-lg rounded-5 bg-gradient text-center p-4" style="background: #fffbe6; border: 1px solid #ffe8b6;">
+      <div class="card-body">
+        <i class="bi bi-envelope-paper-heart fs-1 text-warning"></i>
+        <h3 class="fw-bold mt-2 text-dark">💌 Let's Connect</h3>
+        <p class="text-secondary">Salam kenal, yuk berteman dan kolaborasi ✨</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+          <a href="https://instagram.com/keyy_502" target="_blank" class="btn btn-outline-warning rounded-pill px-4 py-2 fw-semibold btn-pastel border-warning">
+            <i class="bi bi-instagram me-2"></i> Instagram
+          </a>
+          <a href="https://wa.me/6283151604379" target="_blank" class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold btn-pastel border-success">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp
+          </a>
+          <a href="mailto:kezyasimamora2@gmail.com" class="btn btn-outline-secondary rounded-pill px-4 py-2 fw-semibold btn-pastel border-warning text-warning-emphasis">
+            <i class="bi bi-envelope me-2"></i> Email
+          </a>
+        </div>
+        <div class="mt-4 small text-secondary">
+          <i class="bi bi-geo-alt-fill"></i> Medan, Indonesia &nbsp;|&nbsp; <i class="bi bi-flower1"></i> Siap berkarya & berbisnis
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER imut -->
+  <footer class="bg-warning bg-opacity-25 py-4 mt-4 border-top border-warning">
+    <div class="container text-center">
+      <p class="mb-0 text-dark-emphasis small">&copy; 2025 Kezya Intan Devi Simamora — <i class="bi bi-suit-heart-fill text-warning"></i> Dibuat dengan sepenuh hati & Bootstrap 5.3.8 | Kuning pastel cantik</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle untuk navbar toggler (interaksi) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoO9n3kz5vjTvMh3n5r5b5v5e5v5e5v5f5e5f5g5f5g5f5" crossorigin="anonymous"></script>
+  <!-- Smooth scroll sederhana -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== "#") {
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
